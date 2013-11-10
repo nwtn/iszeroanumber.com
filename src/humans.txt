@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+Creator: David Newton
+Site: http://davidnewton.ca/
+Email: david@davidnewton.ca
+Twitter: @newtron
+GitHub: nwtn
+Location: Toronto, Canada
+
+# SITE
+URL: http://iszeroanumber.com/
+Source: https://github.com/nwtn/iszeroanumber.com
+Standards: HTML5, CSS3
+CSS: Normalize.css, HTML5 Boilerplate
+JS: HTML5 Shiv
+Type: Museo Slab and Proxima Nova from TypeKit.com (https://typekit.com/colophons/cdg4kxg)

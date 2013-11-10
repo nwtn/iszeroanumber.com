@@ -1,0 +1,291 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+aside,
+footer,
+header,
+main {
+  display: block;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+@page {
+    margin: 0.5cm;
+}
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}
+
+/***** BASE STYLES for small screens and no-MQ UAs *****/
+
+/** Body + fonts **/
+
+body {
+  position: relative;
+  max-width: 31.25em;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #eee;
+  color: #771100;
+  font-family: "proxima-nova", "Proxima Nova", "ProximaNova", "Proxima Sans", "ProximaSans", "Futura Light", "FuturaLight", "Akzidenz Grotesk", sans-serif;
+  font-size: 1.1em;
+  font-weight: normal;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+  word-wrap: break-word;
+}
+
+header {
+  font-family: "museo-slab", "Museo Slab", "MuseoSlab", "Rockwell", "Segoe UI", "Dejavu Sans", "Verdana", sans-serif;
+}
+
+/** Basic element styles **/
+
+a {
+  color: #470a00;
+}
+
+a:hover,
+a:focus {
+  color: #6c3b33;
+}
+
+a:active {
+  color: #3b0800;
+}
+
+aside {
+  overflow: hidden;
+  margin: 2em auto;
+  text-align: center;
+}
+
+blockquote {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0 1em;
+  border: 1px dashed #888;
+  background: #f4f4f4;
+}
+
+cite {
+  font-size: 0.9em;
+}
+
+cite::before {
+  content: '\2014';
+}
+
+footer {
+  clear: both;
+  padding-top: 1em;
+  margin: 4em 0 0 0;
+}
+
+header {
+  text-align: center;
+  font-weight: 300;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+main {
+  margin-top: 4em;
+}
+
+/** Contextually-determined element styles **/
+
+blockquote p {
+  margin: 1em 0;
+  padding: 0;
+}
+
+header p {
+  margin: 0.1em 0 0 0;
+  font-size: 3em;
+}
+
+footer p {
+  margin-top: 0;
+}
+
+/** Classes **/
+
+header {
+  font-size: 3em;
+  line-height: 0.9;
+}
+
+.iszeroanumbercom-responsive {
+  width: 320px;
+  height: 50px;
+}
+
+/***** BREAKPOINT 1, the one and only breakpoint *****/
+
+@media screen and (min-width: 40em) {
+  /** Basic element styles **/
+
+  aside {
+    width: 29.25em;
+    padding: 1em;
+    background: #ddd;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  /** Classes **/
+
+  .iszeroanumbercom-responsive {
+    width: 468px;
+    height: 60px;
+  }
+}
